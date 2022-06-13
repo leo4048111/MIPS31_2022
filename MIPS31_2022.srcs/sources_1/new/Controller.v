@@ -107,7 +107,7 @@ assign ALUC[3] = LUI | SLT | SLTI | SLTU | SLTIU | SRA | SRAV | SLL | SLLV | SRL
 
 
 //寄存器堆写入数据连接
-assign RF_WData = LW ? DM_ReadData : (JAL ? PC_Next : ALU_Result);
+assign RF_WData = LW ? DM_ReadData : (JAL ? NPC : ALU_Result);
 
 //存储器控制信号
 assign DM_W = SW;
@@ -116,8 +116,8 @@ assign DM_WriteData = RF_RData2;
 assign DM_Addr = (RF_RData1 + {{16{IM_Inst[15]}}, IM_Inst[15:0]} - 32'h10010000)/4;
 
 //PC更新引脚
-wire [31:0] PC_Next;
-assign PC_Next = PC + 4;
+wire [31:0] NPC;
+assign NPC = PC + 4;
 
 //PC更新模块，时序逻辑实现
 always @(posedge clk or posedge rst) begin
@@ -129,13 +129,13 @@ always @(posedge clk or posedge rst) begin
         PC <= RF_RData1;   //跳转到寄存器内地址
     end
     else if (J | JAL) begin
-        PC <= {PC_Next[31:28], IM_Inst[25:0], 2'b0};  
+        PC <= {NPC[31:28], IM_Inst[25:0], 2'b0};  
     end
     else if ((BEQ && ZF) || (BNE && !ZF)) begin
-        PC <= PC_Next + {{14{IM_Inst[15]}}, IM_Inst[15:0], 2'b0}; //偏移符号扩展到32位后与PC+4相加
+        PC <= NPC + {{14{IM_Inst[15]}}, IM_Inst[15:0], 2'b0}; //偏移符号扩展到32位后与PC+4相加
     end
     else begin
-        PC <= PC_Next;
+        PC <= NPC;
     end
 end
 

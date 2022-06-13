@@ -11,69 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="29723310000001fs"></ZoomEndTime>
-      <Cursor1Time time="5040370000000fs"></Cursor1Time>
+      <ZoomStartTime time="56022696666666fs"></ZoomStartTime>
+      <ZoomEndTime time="56824696666667fs"></ZoomEndTime>
+      <Cursor1Time time="56691030000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="15" />
-   <wvobject fp_name="/tb_cpu/uut/controller/PC" type="array">
-      <obj_property name="ElementShortName">PC[31:0]</obj_property>
-      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/DM_Addr" type="array">
-      <obj_property name="ElementShortName">DM_Addr[10:0]</obj_property>
-      <obj_property name="ObjectShortName">DM_Addr[10:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/controller/RF_RAddr1" type="array">
-      <obj_property name="ElementShortName">RF_RAddr1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">RF_RAddr1[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/controller/RF_RAddr2" type="array">
-      <obj_property name="ElementShortName">RF_RAddr2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">RF_RAddr2[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/controller/RF_WAddr" type="array">
-      <obj_property name="ElementShortName">RF_WAddr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">RF_WAddr[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/controller/RF_RData1" type="array">
-      <obj_property name="ElementShortName">RF_RData1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">RF_RData1[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/controller/RF_RData2" type="array">
-      <obj_property name="ElementShortName">RF_RData2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">RF_RData2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/controller/RF_WData" type="array">
-      <obj_property name="ElementShortName">RF_WData[31:0]</obj_property>
-      <obj_property name="ObjectShortName">RF_WData[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/controller/RF/array_reg" type="array">
-      <obj_property name="ElementShortName">array_reg[31:0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">array_reg[31:0][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/dmem/DM_Addr" type="array">
-      <obj_property name="ElementShortName">DM_Addr[10:0]</obj_property>
-      <obj_property name="ObjectShortName">DM_Addr[10:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/dmem/DM_WData" type="array">
-      <obj_property name="ElementShortName">DM_WData[31:0]</obj_property>
-      <obj_property name="ObjectShortName">DM_WData[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/dmem/DM_W" type="logic">
-      <obj_property name="ElementShortName">DM_W</obj_property>
-      <obj_property name="ObjectShortName">DM_W</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/DM_R" type="logic">
-      <obj_property name="ElementShortName">DM_R</obj_property>
-      <obj_property name="ObjectShortName">DM_R</obj_property>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="/tb_cpu/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_cpu/uut/dmem/memory" type="array">
       <obj_property name="ElementShortName">memory[0:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">memory[0:31][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/IM_Inst" type="array">
-      <obj_property name="ElementShortName">IM_Inst[31:0]</obj_property>
-      <obj_property name="ObjectShortName">IM_Inst[31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>
